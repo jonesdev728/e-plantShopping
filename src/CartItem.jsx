@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import './CartItem.css';
-import { removeItem, updateQuantity } from '../slices/CartSlice';
+import { removeItem, updateQuantity } from './CartSlice';
 
 const CartItem = ({ onContinueShopping }) => {
   const cart = useSelector(state => state.cart.items);
